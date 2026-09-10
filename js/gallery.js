@@ -131,13 +131,13 @@ function initLightbox() {
  * Hero Background Video Handling & Low Power Fallback
  */
 function initHeroVideoFallback() {
-  const video = document.querySelector('.hero-video');
-  if (!video) return;
-
-  const playPromise = video.play();
-  if (playPromise !== undefined) {
-    playPromise.catch(() => {
-      console.log('Video autoplay prevented by browser power settings; poster fallback is active.');
-    });
-  }
+  const videos = document.querySelectorAll('.hero-video');
+  videos.forEach(video => {
+    const playPromise = video.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        // Handled silently by poster fallback
+      });
+    }
+  });
 }

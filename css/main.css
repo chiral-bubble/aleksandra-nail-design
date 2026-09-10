@@ -519,6 +519,23 @@ button, input, select, textarea {
   transform: scale(1.02);
 }
 
+.hero-video.desktop-video {
+  display: block;
+}
+
+.hero-video.mobile-video {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hero-video.desktop-video {
+    display: none !important;
+  }
+  .hero-video.mobile-video {
+    display: block !important;
+  }
+}
+
 .hero-overlay {
   position: absolute;
   top: 0;

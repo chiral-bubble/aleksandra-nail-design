@@ -1,0 +1,18 @@
+{
+  "name": "aleksandra-bochenek-nail-design",
+  "version": "1.0.0",
+  "description": "Aleksandra Bochenek - Luxury Nail Design Studio Website (Edinburgh, UK)",
+  "scripts": {
+    "dev": "npx serve -p 8080 .",
+    "start": "npx serve -p 8080 ."
+  },
+  "keywords": [
+    "nail-design",
+    "edinburgh",
+    "luxury-salon",
+    "russian-manicure",
+    "biab-nails"
+  ],
+  "author": "Aleksandra Bochenek",
+  "license": "MIT"
+}
